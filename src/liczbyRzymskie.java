@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class liczbyRzymskie {
+public class  liczbyRzymskie{
 
     public static void main(String[] args) {
 

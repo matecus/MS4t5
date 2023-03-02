@@ -2,11 +2,11 @@ import java.util.Scanner;
 public class  Sortowanieimion {
     public static void main(String[] args) {
         Scanner klawiatura = new Scanner(System.in);
-        System.out.println("Podaj pierwsze imię");
+        System.out.print("Podaj pierwsze imię: ");
         String imie1 = klawiatura.nextLine();
-        System.out.println("Podaj drugię imię");
+        System.out.print("Podaj drugię imię: ");
         String imie2 = klawiatura.nextLine();
-        System.out.println("Podaj trzecie imię");
+        System.out.print("Podaj trzecie imię: ");
         String imie3 = klawiatura.nextLine();
 
         if (imie1.compareTo(imie2) <0 && imie1.compareTo(imie3) < 0){
