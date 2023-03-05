@@ -4,20 +4,20 @@ public class UdzialBiegu {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner klawiatura = new Scanner(System.in);
 
        
         System.out.print("Podaj nazwisko i czas ukończenia biegu (w minutach) dla biegacza #1: ");
         String nazwisko1 = scanner.next();
-        int czas1 = scanner.nextInt();
+        int czas1 = klawiatura.nextInt();
 
         System.out.print("Podaj nazwisko i czas ukończenia biegu (w minutach) dla biegacza #2: ");
         String nazwisko2 = scanner.next();
-        int czas2 = scanner.nextInt();
+        int czas2 = klawiatura.nextInt();
 
         System.out.print("Podaj nazwisko i czas ukończenia biegu (w minutach) dla biegacza #3: ");
         String nazwisko3 = scanner.next();
-        int czas3 = scanner.nextInt();
+        int czas3 = klawiatura.nextInt();
 
        
         System.out.println("Kolejność na mecie:");
