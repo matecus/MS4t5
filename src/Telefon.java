@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Telefon {
    public static void main(String[] args) {
       Scanner klawiatura = new Scanner(System.in);
       char pakiet;
