@@ -1,39 +1,54 @@
 import java.util.Scanner;
+
 public class UdzialBiegu {
+
     public static void main(String[] args) {
-        Scanner klawiatura = new Scanner(System.in);
-        System.out.print("Wprowadz imię: ");
-        String imie1 = klawiatura.nextLine();
-        System.out.print("Wprowadz imię: ");
-        String imie2 = klawiatura.nextLine();
-        System.out.print("Wprowadz imię: ");
-        String imie3 = klawiatura.nextLine();
-        System.out.print(imie1 + " wprowadz swój czas zakończenia biegu: ");
-        int czas1 = klawiatura.nextInt();
-        System.out.print(imie3 + " wprowadz swój czas zakończenia biegu: ");
-        int czas2 = klawiatura.nextInt();
-        System.out.print(imie2 + " wprowadz swój czas zakończenia biegu: ");
-        int czas3 = klawiatura.nextInt();
 
+        Scanner scanner = new Scanner(System.in);
 
+       
+        System.out.print("Podaj nazwisko i czas ukończenia biegu (w minutach) dla biegacza #1: ");
+        String nazwisko1 = scanner.next();
+        int czas1 = scanner.nextInt();
 
-        if (czas1>czas2 && czas2>czas3) {
-            System.out.println("Kolejność: " + " " + imie3 + " " + imie1 + " " + imie2);}
+        System.out.print("Podaj nazwisko i czas ukończenia biegu (w minutach) dla biegacza #2: ");
+        String nazwisko2 = scanner.next();
+        int czas2 = scanner.nextInt();
 
-        else if (czas2>czas1 && czas1>czas3) {
-            System.out.println("Kolejność: " + " " + imie1 + " " + imie2 + " " + imie3);}
+        System.out.print("Podaj nazwisko i czas ukończenia biegu (w minutach) dla biegacza #3: ");
+        String nazwisko3 = scanner.next();
+        int czas3 = scanner.nextInt();
 
-        else if (czas3>czas2 && czas2>czas1) {
-            System.out.println("Kolejność: " + " " + imie2 + " " + imie1 + " " + imie3);}
+       
+        System.out.println("Kolejność na mecie:");
 
-        else if (czas3>czas1 && czas1>czas2) {
-            System.out.println("Kolejność: " + " " + imie1 + " " + imie3 + " " + imie2);}
-
-        else if (czas2>czas3 && czas3>czas1) {
-            System.out.println("Kolejność: " + " " + imie2 + " " + imie3 + " " + imie1);}
-
-        else if (czas1>czas3 && czas3>czas2) {
-            System.out.println("Kolejność: " + " " + imie3 + " " + imie2 + " " + imie1);}
-
+        if (czas1 <= czas2 && czas1 <= czas3) {
+            System.out.println("1. " + nazwisko1);
+            if (czas2 <= czas3) {
+                System.out.println("2. " + nazwisko2);
+                System.out.println("3. " + nazwisko3);
+            } else {
+                System.out.println("2. " + nazwisko3);
+                System.out.println("3. " + nazwisko2);
+            }
+        } else if (czas2 <= czas1 && czas2 <= czas3) {
+            System.out.println("1. " + nazwisko2);
+            if (czas1 <= czas3) {
+                System.out.println("2. " + nazwisko1);
+                System.out.println("3. " + nazwisko3);
+            } else {
+                System.out.println("2. " + nazwisko3);
+                System.out.println("3. " + nazwisko1);
+            }
+        } else {
+            System.out.println("1. " + nazwisko3);
+            if (czas1 <= czas2) {
+                System.out.println("2. " + nazwisko1);
+                System.out.println("3. " + nazwisko2);
+            } else {
+                System.out.println("2. " + nazwisko2);
+                System.out.println("3. " + nazwisko1);
+            }
+        }
     }
 }
