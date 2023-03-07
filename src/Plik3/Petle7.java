@@ -6,11 +6,10 @@ public class Petle7 {
         int suma = 0;
         
         for (int i = 1; i <= 7; i++) {
-            System.out.print("Podaj liczbę: ");
+            System.out.print("Wprowadź liczbę #" + i + ": ");
             int liczba = klawiatura.nextInt();
-            suma += liczba;
-        }
+            suma += liczba;}
         
-        System.out.println("Suma wprowadzonych liczb: " + suma);
+        System.out.println("Suma wprowadzonych liczb wynosi: " + suma);
     }
 }
