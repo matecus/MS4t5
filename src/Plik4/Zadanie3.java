@@ -1,4 +1,4 @@
-package 4;
+package Plik4;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
