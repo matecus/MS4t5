@@ -6,17 +6,17 @@ public class Petle2 {
         char litera = '\0'; //pusty znak
 
         do {
-            System.out.print("Proszę wpisać literę T, t, N lub n: ");
+            System.out.print("Proszę wpisać literę T/t lub N/n: ");
             litera = klawiatura.nextLine().charAt(0);
 
             switch (litera) {
                 case 'T':
                 case 't':
-                    System.out.println("Wpisana litera to T lub t.");
+                    System.out.println("Wpisana litera to T/t.");
                     break;
                 case 'N':
                 case 'n':
-                    System.out.println("Wpisana litera to N lub n.");
+                    System.out.println("Wpisana litera to N/n.");
                     break;
                 default:
                     System.out.println("Niepoprawna litera, proszę spróbować ponownie.");
@@ -24,7 +24,7 @@ public class Petle2 {
             }
         } 
         while (litera != 'T' && litera != 't' && litera != 'N' && litera != 'n');
-
+        // pętla trwa do momentu niespełnienia podanego warunku;
         System.out.println("Wpisana litera jest poprawna.");
     }
 }
