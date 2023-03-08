@@ -1,4 +1,4 @@
-package4;
+package Plik4;
 import java.util.Scanner;
 
 public class Zadanie2 {
